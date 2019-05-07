@@ -1,0 +1,29 @@
+﻿# Generic files to exclude at any path
+
+*.user
+*.suo
+
+# Generic folders to exclude at any path
+
+.git/
+bin/
+obj/
+packages/
+node_modules/
+bower_components/
+.sass-cache/
+.tmp/
+App_Data/
+
+
+# Specific Excluded folders 
+
+\ProjectSource\Source\SmartScaffolderCoreJs\reports
+\ProjectSource\Source\HubAPI\TestResults
+\ProjectSource\Source\HubUI\reports
+\ProjectSource\Source\SiteManagerApp\dist
+\ProjectSource\Source\SiteManagerApp\logs
+\ProjectSource\Source\SmartScaffolderCoreJs\dist
+\ProjectSource\Documentation\Specifications\dist
+
+\.vscode
