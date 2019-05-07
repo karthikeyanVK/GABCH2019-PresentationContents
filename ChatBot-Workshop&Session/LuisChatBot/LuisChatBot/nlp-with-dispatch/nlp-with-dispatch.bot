@@ -1,0 +1,73 @@
+
+{
+    "name": "nlp-with-dispatch",
+    "description": "",
+  "services": [
+    {
+      "type": "endpoint",
+      "id": "1",
+      "name": "development",
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages"
+    },
+    {
+      "type": "luis",
+      "name": "travelagent",
+      "appId": "030e71e0-7cd3-4e0b-9283-2c63c5947903",
+      "authoringKey": "ddb027e348a7471db699034d2127a42a",
+      "subscriptionKey": "ddb027e348a7471db699034d2127a42a",
+      "version": "0.1",
+      "region": "westus",
+      "id": "9"
+    },
+    {
+      "type": "luis",
+      "name": "Home Automation",
+      "appId": "98c39f58-9546-4293-b4b7-3af57904f55a",
+      "authoringKey": "ddb027e348a7471db699034d2127a42a",
+      "subscriptionKey": "ddb027e348a7471db699034d2127a42a",
+      "version": "0.1",
+      "region": "westus",
+      "id": "7"
+    },
+    {
+      "type": "luis",
+      "name": "Weather",
+      "appId": "09341913-1033-4709-b660-e491439a16f2",
+      "authoringKey": "ddb027e348a7471db699034d2127a42a",
+      "subscriptionKey": "ddb027e348a7471db699034d2127a42a",
+      "version": "0.1",
+      "region": "westus",
+      "id": "50"
+    },
+    {
+      "type": "qna",
+      "name": "sample-qna",
+      "id": "201",
+      "subscriptionKey": "9461ac9e-f5b5-452c-937d-d5a606d07e8a",
+      "kbId": "140293cd-df9d-4f58-9c29-a5c9948e9691",
+      "endpointKey": "95dd8259-66dd-4bf3-a0e3-b3dcb9875d0b",
+      "hostname": "https://testqnagab2019.azurewebsites.net/qnamaker"
+    },
+    {
+      "type": "dispatch",
+      "serviceIds": [
+        "50",
+        "201",
+        "7",
+          "9"
+      ],
+      "name": "nlp-with-dispatchDispatch",
+
+      "appId": "78ef9f1c-a651-43f2-a4f9-5530fcb0bd8d",
+      "authoringKey": "ddb027e348a7471db699034d2127a42a",
+      "subscriptionKey": "ddb027e348a7471db699034d2127a42a",
+      "version": "Dispatch",
+      "region": "westus",
+      "id": "161"
+    }
+  ],
+    "padlock": "",
+    "version": "2.0"
+}
