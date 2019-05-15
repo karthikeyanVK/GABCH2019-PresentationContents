@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppCenterDemo"
+             x:Class="AppCenterDemo.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to AppCenter Workshop" 
+           HorizontalOptions="Center" Margin="0,34,0,0" />
+        <Button x:Name="BtnEvent" HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" Text="Event" Clicked="BtnEvent_Clicked"></Button>
+        <Button x:Name="BtnCrash" Margin="0,20,0,0" HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" Text="Crash" Clicked="BtnCrash_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
